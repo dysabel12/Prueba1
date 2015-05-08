@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Centro de Idiomas</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Centro de Idiomas USMP">
+      <meta name="author" content="Diana Llanos">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.css.map" rel="stylesheet">
+      <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bootstrap.css.map" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main1.css" rel="stylesheet">
+      <link href="css/dibujo.css" rel="stylesheet">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   </head>
+   <script type="text/javascript">
+    
+      $(document).ready(function() {
+        //$("a").removeClass("disabled");
+        $(window).on('resize', handler);
+          function handler( event ) {
+            var mq = window.matchMedia( "(max-width: 767px)" );
+            if (mq.matches) {
+              $(".dropdown-toggle").removeClass("disabled");
+            }else{
+              $(".dropdown-toggle").addClass("disabled");
+            }
+          }
+       $(".nav a").on("click", function(){
+         $(".nav").find(".active").removeClass("active");
+         $(this).parent().addClass("active");
+        });
+      });
+   </script>
+   <body>
+    <div id="first-container" class="container">
+      <div id="first-row" class="row">
+        <div id="nav-left" class="col-md-3 col-sm-4">
+            <nav class="navbar navbar-default" role="navigation">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Centro de idiomas USMP</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Inicio<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Institucional <span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="somos.html">Quiénes Somos</a></li>
+                      <li><a href="historia.html">Historia</a></li>
+                      <li><a href="misionvision.html">Misión y Visión</a></li>
+                      <li><a href="extension.html">Extensión y Proyección</a></li>
+                      <li><a href="aprendizaje.html">Aprendizaje y Enseñanza</a></li>
+                      <li><a href="comunicacion.html">Comunicación Mundial</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Programa de Estudios<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="ingles-pregrado.html">Inglés Pre-Grado</a></li>
+                      <li><a href="#">Lenguas Extranjeras</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Requisitos e Inversión<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Sedes y Horarios<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Sede Jesús María</a></li>
+                      <li><a href="#">Sede Santa Anita</a></li>
+                      <li><a href="#">Sede Pueblo Libre</a></li>
+                      <li><a href="#">Sede San Isidro</a></li>
+                      <li><a href="#">Sede Chiclayo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="clasificacion.html">Examen Clasificación<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Cronograma Anual<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Clases Diarias</a></li>
+                      <li><a href="#">Clases Sabatinas</a></li>
+                      <li><a href="#">Clases Dominicales</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="preguntas.html">Preguntas Frecuentes<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                  <li><a href="#">Consulta de Notas<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+                  <li><a href="#">Contáctenos<span style="float:right;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+
+                </ul>
+
+              </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+
+      <div id="contenido" class="col-md-9 col-sm-8">
+      
+      <!--<div><p class="text-left"><img id="logo-img" src="images/1-1.png"><p></div>-->
+              <div class="container" style="float:right;position:absolute;  z-index: 2;">
+<!--
+        <p class="text-center"><img class="img-responsive" style="padding-top: 25%; margin-bottom: 5em; padding-left: 5%; padding-right: 5%;" src="images/centro.png"></p>-->
+        <div id="cuadro">
+        <div class="arriba">
+          <div class="cabeza"></div>
+          <div class="cuello"></div></div>
+        </div>
+        <h1 class="typershow text-center"><span style="display: inline-block;" data-typer-targets="Bievenido al Centro de Idiomas USMP,Bienvenido a un mundo lleno de oportunidades,Welcome to the Language Centre USMP,Bienvenue au Centre de langues USMP,Willkommen im Sprachenzentrum USMP,Benvenuti al Centro Linguistico USMP,Bem-vindo ao Centro de Língua USMP,欢迎您到语言中心USMP,Vive comunicado con el mundo,Welcome to a world of opportunities"></span>.</h1>
+      </div>
+      </div>
+
+      
+
+      </div>
+
+
+    </div>
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+       <!-- Include all compiled plugins (below), or include individual files as needed -->
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/jquery.typer.js"></script>
+       <script>
+            $(function () {
+              $('[data-typer-targets]').typer();
+            });
+        </script>
+   </body>
+</html>
